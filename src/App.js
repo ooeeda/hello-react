@@ -4,6 +4,7 @@ import './App.css';
 import MyComponent from "./MyComponent";
 import Count from "./Count"
 import Say from "./Say"
+import EventPractice from "./EventPractice"
 class App extends Component{
   render(){
     const name = "react";
@@ -15,6 +16,7 @@ class App extends Component{
      {/* <MyComponent name={"ddasfsd"} favortieNumber={1}>텍스트</MyComponent>*/}
       <Count/>
       <Say/>
+      <EventPractice/>
     </Fragment>
     );
   }
