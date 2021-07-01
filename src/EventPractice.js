@@ -6,7 +6,8 @@ class EventPractice extends Component{
         message : ''
     }
 
-    constructor(props){
+
+/*    constructor(props){
         super(props)
 
         this.handleChange  = this.handleChange.bind(this);
@@ -24,7 +25,25 @@ class EventPractice extends Component{
         this.setState({
             message : ''
         });
+    }*/
+
+
+    /**
+     * transform-class-propertices 표기법
+     * 이렇게 안할경우 constructor에서 해당 메서드를 해당 컴포너느로 바인딩하기 위해서 this, bind해줘야 한다.
+    */
+    handleChange = (e) =>{
+        this.setState({
+            message : e.target.value
+        });
     }
+    handleClick = (e) => {
+        alert(this.state.message);
+        this.setState({
+            message : e.target.value
+        })
+    }
+
 
     render(){
         return (
