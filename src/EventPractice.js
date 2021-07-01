@@ -3,6 +3,7 @@ import React, {Component}  from 'react'
 class EventPractice extends Component{
 
     state = {
+        username : '',
         message : ''
     }
 
@@ -34,13 +35,14 @@ class EventPractice extends Component{
     */
     handleChange = (e) =>{
         this.setState({
-            message : e.target.value
+            [e.target.name] : e.target.value
         });
     }
     handleClick = (e) => {
-        alert(this.state.message);
+        alert(this.state.userName+' : '+this.state.message);
         this.setState({
-            message : e.target.value
+            userName : '',
+            message : ''
         })
     }
 
@@ -49,6 +51,7 @@ class EventPractice extends Component{
         return (
             <div>
                 <h1>연습 : {this.state.message}</h1>
+                <input type="text" name="username" placeholder="사용자명" value={this.state.username} onChange={this.handleChange}/>
                 <input type="text" name="message" placeholder="아무거나입력" value={this.state.message}
                        onChange={this.handleChange}
                 />
