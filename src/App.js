@@ -1,8 +1,29 @@
+import React, {Component, Fragment} from "react";
 import logo from './logo.svg';
 import './App.css';
+import MyComponent from "./MyComponent";
+import Count from "./Count"
+import Say from "./Say"
+class App extends Component{
+  render(){
+    const name = "react";
 
-function App() {
+    //return <div className={name}>{name}</div>;
+    return(
+    <Fragment>
+      {/*<MyComponent name="dddd"/>*/}
+     {/* <MyComponent name={"ddasfsd"} favortieNumber={1}>텍스트</MyComponent>*/}
+      <Count/>
+      <Say/>
+    </Fragment>
+    );
+  }
+
+}
+
+/*function App() {
   return (
+      <Fragment>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,7 +40,13 @@ function App() {
         </a>
       </header>
     </div>
+      <div>
+
+      </div>
+      </Fragment>
   );
-}
+}*/
+
+
 
 export default App;
