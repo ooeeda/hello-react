@@ -39,9 +39,9 @@ class EventPractice extends Component{
         });
     }
     handleClick = (e) => {
-        alert(this.state.userName+' : '+this.state.message);
+        alert(this.state.username+' : '+this.state.message);
         this.setState({
-            userName : '',
+            username : '',
             message : ''
         })
     }
