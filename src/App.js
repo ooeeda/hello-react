@@ -5,6 +5,7 @@ import MyComponent from "./MyComponent";
 import Count from "./Count"
 import Say from "./Say"
 import EventPractice from "./EventPractice"
+import EventPracticeFnc from "./EventPracticeFnc";
 class App extends Component{
   render(){
     const name = "react";
@@ -17,6 +18,7 @@ class App extends Component{
       <Count/>
       <Say/>
       <EventPractice/>
+      <EventPracticeFnc/>
     </Fragment>
     );
   }

@@ -55,12 +55,14 @@ class EventPractice extends Component{
     render(){
         return (
             <div>
+                <h3>-------------------------- 클래스 방식 ------------------------------------------</h3>
                 <h1>연습 : {this.state.message}</h1>
                 <input type="text" name="username" placeholder="사용자명" value={this.state.username} onChange={this.handleChange}/>
                 <input type="text" name="message" placeholder="아무거나입력" value={this.state.message} onKeyPress={this.handleKeyPress}
                        onChange={this.handleChange}
                 />
                 <button onClick={this.handleClick}>연습확인</button>
+                <h3>-----------------------------------------------------------------------------------------</h3>
             </div>
         );
     }
