@@ -6,6 +6,7 @@ import Count from "./Count"
 import Say from "./Say"
 import EventPractice from "./EventPractice"
 import EventPracticeFnc from "./EventPracticeFnc";
+import ValidationSample from "./ValidationSample";
 class App extends Component{
   render(){
     const name = "react";
@@ -19,6 +20,8 @@ class App extends Component{
       <Say/>
       <EventPractice/>
       <EventPracticeFnc/>
+      <h1>--------------------------------</h1>
+      <ValidationSample/>
     </Fragment>
     );
   }
