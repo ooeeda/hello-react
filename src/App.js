@@ -8,6 +8,7 @@ import EventPractice from "./EventPractice"
 import EventPracticeFnc from "./EventPracticeFnc";
 import ValidationSample from "./ValidationSample";
 import ScrollBox from "./ScrollBox";
+import InteraionSample from "./InteraionSample"
 class App extends Component{
   render(){
     const name = "react";
@@ -27,6 +28,8 @@ class App extends Component{
         <ScrollBox ref={ref => (this.scrollBox = ref)} />
         <button onClick={() => this.scrollBox.scrollToBottom()}>아래론</button>
       </div>
+      <h1>-----------맵-------------</h1>
+      <InteraionSample/>
     </Fragment>
     );
   }
