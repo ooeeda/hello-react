@@ -9,6 +9,7 @@ import EventPracticeFnc from "./EventPracticeFnc";
 import ValidationSample from "./ValidationSample";
 import ScrollBox from "./ScrollBox";
 import InteraionSample from "./InteraionSample"
+import LifeCycleSample from "./LifeCycleSample";
 class App extends Component{
   render(){
     const name = "react";
@@ -30,6 +31,8 @@ class App extends Component{
       </div>
       <h1>-----------맵-------------</h1>
       <InteraionSample/>
+      <h1>---------라이프사이클 메서드--------------</h1>
+      <LifeCycleSample/>
     </Fragment>
     );
   }
